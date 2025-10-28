@@ -2,22 +2,7 @@
 <html>
 <head><title>Mock Interview</title></head>
 <body>
-  <h1>Choose Interview Type</h1>
-  <button onclick="start('technical')">Technical</button>
-  <button onclick="start('behavioral')">Behavioral</button>
-
-  <div id="chat"></div>
-  <script>
-    let sessionId = Date.now().toString();
-    async function start(type) {
-      let res = await fetch('/start', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({session_id: sessionId, type})
-      });
-      let data = await res.json();
-      document.getElementById('chat').innerHTML += `<p><b>Interviewer:</b> ${data.question || data.desc}</p>`;
-    }
-  </script>
+  <h1>Mock Interview Bot</h1>
+  <p>Server is running!</p>
 </body>
 </html>
