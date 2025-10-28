@@ -9,23 +9,131 @@
         {"input": "2 7 11 15\n9", "output": "0 1"},
         {"input": "3 2 4\n6", "output": "1 2"}
       ]
+    },
+    {
+      "id": 2,
+      "title": "Valid Anagram",
+      "desc": "Given two strings s and t, return true if t is an anagram of s, and false otherwise. An anagram is a word formed by rearranging the letters of another.",
+      "examples": [
+        {
+          "input": "s = \"anagram\", t = \"nagaram\"",
+          "output": "true"
+        },
+        {
+          "input": "s = \"rat\", t = \"car\"",
+          "output": "false"
+        }
+      ],
+      "test_cases": [
+        {
+          "input": "anagram nagaram",
+          "output": "true"
+        },
+        {
+          "input": "rat car",
+          "output": "false"
+        }
+      ]
     }
   ],
   "medium": [
     {
       "id": 1,
-      "title": "Two Sum ( Medium )",
-      "desc": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
-      "examples": [{"input": "[2,7,11,15]\n9", "output": "[0,1]"}],
+      "title": "3Sum",
+      "desc": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets.",
+      "examples": [
+        {
+          "input": "nums = [-1,0,1,2,-1,-4]",
+          "output": "[[-1,-1,2],[-1,0,1]]"
+        },
+        {
+          "input": "nums = [0,1,1]",
+          "output": "[]"
+        }
+      ],
       "test_cases": [
-        {"input": "2 7 11 15\n9", "output": "0 1"},
-        {"input": "3 2 4\n6", "output": "1 2"}
+        {
+          "input": "-1 0 1 2 -1 -4",
+          "output": "-1 -1 2 -1 0 1"
+        },
+        {
+          "input": "0 1 1",
+          "output": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Next Permutation",
+      "desc": "Given an array of integers nums, find the next permutation of nums. The next permutation is the next lexicographically greater permutation of its integers. If such arrangement is not possible, the array must be rearranged as the lowest possible order (i.e., sorted in ascending order). The replacement must be in place and use only constant extra memory.",
+      "examples": [
+        {
+          "input": "nums = [1,2,3]",
+          "output": "[1,3,2]"
+        },
+        {
+          "input": "nums = [3,2,1]",
+          "output": "[1,2,3]"
+        },
+        {
+          "input": "nums = [1,1,5]",
+          "output": "[1,5,1]"
+        }
+      ],
+      "test_cases": [
+        {
+          "input": "1 2 3",
+          "output": "1 3 2"
+        },
+        {
+          "input": "3 2 1",
+          "output": "1 2 3"
+        },
+        {
+          "input": "1 1 5",
+          "output": "1 5 1"
+        }
       ]
     }
  ],
   "behavioral": [
+    "Tell me about yourself",
+
     "Tell me about a time you failed.",
-    "Describe a conflict with a teammate.",
-    "Why do you want to work here?"
+    "Tell me about your experience working with AI technologies, such as machine learning models or neural networks. What projects have you contribut d to, and what were the key outcomes?",
+    "Describe your experience with relational databases like SQL or PostgreSQL. Can you walk me through a time when you designed or optimized a database schema?",
+    "Tell us about your hands-on experience with React. What components or applications have you built, and how did you handle state management?",
+    "Share your experience with cloud computing platforms like AWS or Azure. What services have you used, and how did they impact a project's scalability?",
+    "Tell me about your work with data visualization tools such as Tableau or D3.js. How have you used them to communicate insights in a professional setting?",
+    "Describe your experience with version control systems like Git. Give an example of how you've managed branching and merging in a team environment.",
+    "Tell us about your familiarity with cybersecurity practices, such as encryption or vulnerability assessments. What role have you played in securing systems?",
+
+    "Tell me about a time when you faced a significant technical challenge at work. What was the obstacle, and what strategies or resources helped you overcome it?",
+    "Describe a situation where you encountered a tight deadline that seemed impossible. How did you prioritize tasks, and what was the result?",
+    "Tell us about a time when a project went off track due to unexpected issues. What steps did you take to get it back on course?",
+
+    "Tell me about a time when you led a team through a complex project. What leadership style did you use, and how did it contribute to the team's success?",
+    "Describe a situation where you had to step up as a leader without formal authority. How did you motivate others, and what was the outcome?",
+    "Tell us about a time when you mentored a junior colleague. What challenges arose, and how did your guidance impact their growth?",
+
+    "Tell me about a time when you collaborated with a diverse team to achieve a goal. How did you handle differing opinions, and what was your contribution?",
+    "Describe a situation where team dynamics were strained. What role did you play in resolving conflicts and improving collaboration?",
+    "Tell us about a group project where you had to rely on others' expertise. How did you ensure effective communication and a successful delivery?",
+
+    "Tell me about a time when you had to persuade a stakeholder or colleague to adopt your idea or approach. What tactics did you use, and what was the result?",
+    "Describe a situation where you influenced a decision in a meeting. How did you build your case, and how did it affect the project's direction?",
+    "Tell us about a time when you convinced a team to change course on a strategy. What evidence or arguments did you present?",
+
+    "Tell me about a time when you faced an ethical dilemma at work, such as a conflict between company policy and personal values. How did you handle it?",
+    "Describe a situation involving a moral conflict, like discovering unethical behavior in a team. What actions did you take, and what was the resolution?",
+    "Tell us about a time when you had to make a tough decision that involved balancing business goals with ethical considerations. What guided your choice?",
+
+    "What do you consider to be your greatest strengths, and how have they helped you succeed in previous roles?",
+    "Tell me about your top three strengths. Provide an example of how one of them played a key role in a professional achievement.",
+    "What are your core strengths, and how do they align with the demands of this position?",
+    "Describe your biggest weakness, and what steps have you taken to address or mitigate it?",
+    "What is one area where you've identified a weakness in your skill set? How have you worked to improve it over time?",
+    "Tell us about a weakness that has challenged you in the past. What strategies do you use to turn it into a strength?"
   ]
+
 }
